@@ -16,10 +16,10 @@ def creating_session(subsession: Subsession):
     if subsession.session.config['language'] == 'de' and subsession.session.config['car_size_future'] == "small":
         from .lexicon_de_small import Lexicon
         subsession.session.myLangCode = "_de"
-    if subsession.session.config['language'] == 'de' and subsession.session.config['car_size_future'] == "medium":
+    elif subsession.session.config['language'] == 'de' and subsession.session.config['car_size_future'] == "medium":
         from .lexicon_de_medium import Lexicon
         subsession.session.myLangCode = "_de"
-    if subsession.session.config['language'] == 'de' and subsession.session.config['car_size_future'] == "large":
+    elif subsession.session.config['language'] == 'de' and subsession.session.config['car_size_future'] == "large":
         from .lexicon_de_large import Lexicon
         subsession.session.myLangCode = "_de"
     elif subsession.session.config['language'] == 'sa' and subsession.session.config['car_size_future'] == "small":
